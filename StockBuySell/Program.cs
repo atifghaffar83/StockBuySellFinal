@@ -9,8 +9,9 @@ namespace StockBuySell
     {
         static void Main(string[] args)
         {
-            //-----------------------------------------------------------
-            //reading csv file
+          
+            //Section 1 reading csv file-----------------------------------------------------------
+
             /* 
              List<string> readFile = new List<string>();
              using (var reader = new StreamReader(@"dataset.csv"))
@@ -30,9 +31,14 @@ namespace StockBuySell
              openingBalancesList = readFile.Select(x => double.TryParse(x, out temp) ? temp : 0).ToList();
              */
 
-            //-----------------------------------------------------------
-            //we can use the following dataset if we not uploading the csv file
+            // Section 1-----------------------------------------------------------
+
+            //Section 2 (we can use the following dataset if we not uploading the csv file)-------------------------------------
+            
             double[] openingBalancesList = { 19.55, 19.15, 16.15, 18.35, 17.38, 18.39, 18.88, 17.87, 17.77, 17.37, 18.39, 18.88, 17.87, 19.15, 16.15, 18.39, 17.39, 18.39, 17.87, 17.77, 17.39, 18.37, 18.88, 19.15, 16.15, 18.35, 16.13, 19.15, 16.15, 18.39 };
+            
+            //Section 2-----------------------------------------------------------
+
 
             //minimum stock and day value
             double minStockValue = openingBalancesList.Min();
